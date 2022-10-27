@@ -1,6 +1,7 @@
 package de.hsba.bi.webshop.atzos.paypal.dao;
 
 import lombok.Data;
+import lombok.Getter;
 
 import javax.persistence.*;
 
@@ -8,7 +9,9 @@ import javax.persistence.*;
 @Table(name = "ORDER")
 @Data
 public class Order {
+
     @Id
+    @Getter
     @GeneratedValue(strategy = GenerationType.AUTO)
     private Long id;
     @Column(name = "PALPAL_ORDER_ID")

@@ -11,6 +11,6 @@ public class OrderDTO implements Serializable {
     private OrderIntent intent;
     @JsonProperty("purchase_units")
     private List<PurchaseUnit> purchaseUnits;
-    @JsonProperty("application_context")
+    @JsonProperty("user/myBoughtProducts")
     private PayPalAppContextDTO applicationContext;
 }

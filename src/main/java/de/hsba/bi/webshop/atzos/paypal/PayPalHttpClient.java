@@ -8,10 +8,13 @@ import de.hsba.bi.webshop.atzos.paypal.dto.OrderDTO;
 import de.hsba.bi.webshop.atzos.paypal.dto.OrderResponseDTO;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.context.annotation.Bean;
 import org.springframework.http.HttpHeaders;
 import org.springframework.http.MediaType;
 import org.springframework.stereotype.Component;
 
+import java.beans.BeanProperty;
+import java.beans.JavaBean;
 import java.net.URI;
 import java.net.http.HttpClient;
 import java.net.http.HttpRequest;

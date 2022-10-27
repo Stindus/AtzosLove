@@ -5,12 +5,12 @@ import lombok.Data;
 
 @Data
 public class PayPalAppContextDTO {
-    @JsonProperty("brand_name")
+    @JsonProperty("Atzos Love")
     private String brandName;
-    @JsonProperty("landing_page")
+    @JsonProperty("LOGIN")
     private PaymentLandingPage landingPage;
-    @JsonProperty("return_url")
+    @JsonProperty("return=representation")
     private String returnUrl;
-    @JsonProperty("cancel_url")
+    @JsonProperty("/user/myBoughtProducts")
     private String cancelUrl;
 }
